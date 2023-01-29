@@ -1,8 +1,9 @@
+
 import React from "react";
 import Link from "next/link";
 
-const Nav = ({ categories }) => {
-    console.log(categories)
+const Nav = ({ categories, global }) => {
+
     return (
         <div>
             <nav className="uk-navbar-container" data-uk-navbar>
@@ -10,7 +11,7 @@ const Nav = ({ categories }) => {
                     <ul className="uk-navbar-nav">
                         <li>
                             <Link href="/">
-                                Strapi Blog
+                                {global.attributes.site_name}
                             </Link>
                         </li>
                     </ul>
@@ -32,5 +33,6 @@ const Nav = ({ categories }) => {
         </div>
     );
 };
+
 
 export default Nav;

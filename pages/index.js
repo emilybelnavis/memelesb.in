@@ -7,12 +7,12 @@ import { fetchAPI} from "@/lib/api";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home( {posts, categories, homepage }) {
+export default function Home( {posts, categories, homepage, global }) {
   return (
-      <Layout categories={categories}>
+      <Layout categories={categories} global={global}>
         <div className="uk-section">
           <div className="uk-container uk-container-large">
-            <h1>Hello World!</h1>
+            <h1>{global.attributes.site_description}</h1>
           </div>
         </div>
       </Layout>
@@ -20,10 +20,11 @@ export default function Home( {posts, categories, homepage }) {
 }
 
 export async function getStaticProps() {
-  const [postsRes, categoriesRes, homepageRes] = await Promise.all([
-    fetchAPI("/posts", { populate: ["image", "category"] }),
-    fetchAPI("/categories", { populate: "name" }),
-    fetchAPI("/homepage", { populate: "*" }),
+  const [postsRes, categoriesRes, homepageRes, globalRes] = await Promise.all([
+      fetchAPI("/posts", { populate: ["image", "category"] }),
+      fetchAPI("/categories", { populate: "name" }),
+      fetchAPI("/homepage", { populate: "*" }),
+      fetchAPI("/global", { populate: "*"}),
   ]);
 
   return {
@@ -31,6 +32,7 @@ export async function getStaticProps() {
       posts: postsRes.data,
       categories: categoriesRes.data,
       homepage: homepageRes.data,
+      global: globalRes.data,
     },
     revalidate: 1,
   };
