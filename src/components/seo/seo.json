@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "displayName": "seo"
+  },
+  "options": {},
+  "attributes": {
+    "meta_title": {
+      "type": "string",
+      "required": true
+    },
+    "meta_description": {
+      "type": "string",
+      "required": true
+    },
+    "share_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": false
+    }
+  }
+}
