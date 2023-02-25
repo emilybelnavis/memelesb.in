@@ -1,4 +1,3 @@
-
 import React from "react";
 import Link from "next/link";
 
@@ -10,7 +9,7 @@ const Nav = ({ categories, global }) => {
                 <div className="uk-navbar-left">
                     <ul className="uk-navbar-nav">
                         <li>
-                            <Link href="/">
+                            <Link href="/" className="link-home">
                                 {global.attributes.site_name}
                             </Link>
                         </li>

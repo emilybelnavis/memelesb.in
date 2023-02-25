@@ -1,0 +1,47 @@
+@import "fonts/newyorkxl";
+@import "main.scss";
+
+
+#category {
+    font-family: Staatliches;
+    font-weight: 500;
+}
+
+#title {
+    letter-spacing: 0.4px;
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 1.13636;
+}
+
+#banner {
+    margin: 20px;
+    height: 800px;
+}
+
+#editor {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+/*.uk-navbar-container {*/
+/*    background: #fff !important;*/
+/*    font-family: Staatliches;*/
+/*}*/
+
+img:hover {
+    opacity: 1;
+    transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+//.link-home {
+//    font-family: Roboto, Helvetica, Arial, sans-serif !important;
+//    font-weight: 100 !important;
+//}
+
+.link-home {
+    font-family: "New York", serif !important;
+    font-style: normal;
+    font-weight: 200;
+}

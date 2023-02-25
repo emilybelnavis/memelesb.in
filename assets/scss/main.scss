@@ -1,0 +1,48 @@
+@import "fonts/style.scss";
+
+$fontFamily: "New York Extra Large";
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $fontFamily;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: $fontFamily;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+h3{
+  font-family: $fontFamily;
+  font-size: 3rem;
+  font-weight: 500
+}
+
+h4 {
+  font-family: $fontFamily;
+  font-size: 2rem;
+  font-weight: 500
+}
+
+h5 {
+  font-family: $fontFamily;
+  font-size: 1.5rem;
+  font-weight: 500
+}
+
+h6 {
+  font-family: $fontFamily;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: 1rem;
+  font-weight: 400;
+}
