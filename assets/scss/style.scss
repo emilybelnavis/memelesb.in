@@ -1,9 +1,9 @@
-@import "fonts/newyorkxl";
-@import "main.scss";
+@import "fonts/_import";
+@import "main";
 
 
 #category {
-    font-family: Staatliches;
+    font-family: "New York Extra Large";
     font-weight: 500;
 }
 
@@ -25,20 +25,10 @@
     line-height: 1.75;
 }
 
-/*.uk-navbar-container {*/
-/*    background: #fff !important;*/
-/*    font-family: Staatliches;*/
-/*}*/
-
 img:hover {
     opacity: 1;
     transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-
-//.link-home {
-//    font-family: Roboto, Helvetica, Arial, sans-serif !important;
-//    font-weight: 100 !important;
-//}
 
 .link-home {
     font-family: "New York", serif !important;

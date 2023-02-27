@@ -1,4 +1,5 @@
-@import "fonts/style.scss";
+@import "fonts/_import";
+@import "colors/_import";
 
 $fontFamily: "New York Extra Large";
 a {
@@ -7,42 +8,50 @@ a {
 
 h1 {
   font-family: $fontFamily;
-  font-size: 6rem;
+  font-size: 6em;
   font-weight: 500;
 }
 
 h2 {
   font-family: $fontFamily;
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: 500;
 }
 
 h3{
   font-family: $fontFamily;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 500
 }
 
 h4 {
   font-family: $fontFamily;
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 500
 }
 
 h5 {
   font-family: $fontFamily;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 500
 }
 
 h6 {
   font-family: $fontFamily;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 500;
 }
 
 body {
   font-family: $fontFamily;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 400;
+}
+.cover-text {
+  color: white !important;
+}
+
+.cover-dark {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  position: absolute;
 }
