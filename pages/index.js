@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.scss'
+//import styles from '@/styles/Home.module.scss'
 import Layout from "@/components/Layout"
 import { fetchAPI} from "@/lib/api";
 import { getStrapiMedia } from "@/lib/media";
@@ -11,8 +11,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home( {posts, categories, global, homepage }) {
     return (
         <Layout categories={categories} global={global} homepage={homepage}>
-            <div className="uk-cover-container">
+            <div className="uk-container">
                 <img src={getStrapiMedia(homepage.attributes.media)} uk-cover />
+                <div className="uk-container-expand">
+                </div>
             </div>
             {/*<div className="uk-section">*/}
             {/*    <div className="uk-cover-container uk-container-large uk-position-center">*/}

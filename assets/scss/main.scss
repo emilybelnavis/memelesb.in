@@ -1,5 +1,12 @@
 @import "fonts/_import";
-@import "colors/_import";
+@import "components/lavender/navbar";
+
+$global-link-color: #DA7D02;
+
+@import "uikit/src/scss/variables";
+@import "uikit/src/scss/mixins-theme";
+
+@import "uikit/src/scss/uikit-theme";
 
 $fontFamily: "New York Extra Large";
 a {
