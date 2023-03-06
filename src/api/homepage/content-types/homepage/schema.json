@@ -46,7 +46,7 @@
     },
     "media": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -59,6 +59,14 @@
           "localized": true
         }
       }
+    },
+    "landingText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
     }
   }
 }
