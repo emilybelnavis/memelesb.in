@@ -1,6 +1,20 @@
 @import "../../colors/baseui";
 @import "../../colors/lavender";
+@import "../../fonts/import";
 
-.ml-navbar-container {
-  background-color: $lightPrimaryContainer !important;
+$navbar-gap: 0px !default;
+
+.ml-bg-primary-container-light {
+  background: $lightPrimaryContainer;
+}
+
+.ml-nav-brand-on-primary-container-light {
+  font-size: 1.5rem;
+  font-family: "New York Extra Large" !important;
+  color: $lightOnPrimaryContainer !important;
+}
+
+.ml-nav-link-on-primary-container-light {
+  font-family: "New York Extra Large" !important;
+  color: $lightOnPrimaryContainer !important;
 }
