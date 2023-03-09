@@ -8,22 +8,22 @@ import { getStrapiMedia } from "@/lib/media";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home( {posts, categories, global, homepage }) {
+export default function Home( {posts, categories, global, homepage,  }) {
     const coverImage = {
         background: `linear-gradient(rgba(0,0,0, 0.25), rgba(0, 0, 0, 0.45)), 
                      url("${getStrapiMedia(homepage.attributes.media)}")`,
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "relative",
-        height: "auto",
-        width: "90vw"
-
+        backgroundSize: "cover",
+        backgroundPosition: "center"
     }
     return (
         <Layout categories={categories} global={global} homepage={homepage}>
-            <div className="p-5 mb-4 bg-light rounded-3">
-                <div className="container-fluid py-4" style={coverImage}>
-                    <h1 className="display-1 fw-bold">{global.attributes.site_tagline}</h1>
-                    <h3 className="display-3">{global.attributes.site_description}</h3>
+            <div className="bg-light rounded-3">
+                <div className="container-fluid" style={coverImage}>
+                    <div className="cover-text-container">
+                        <h1 className="display-1 fw-bold light-cover-text">{global.attributes.site_tagline}</h1>
+                        <h3 className="display-3 light-cover-text">{global.attributes.site_description}</h3>
+                        <h5 className="display-5 light-cover-text">{homepage.attributes.landingText}</h5>
+                    </div>
                 </div>
             </div>
             {/*<div className="uk-cover-container">*/}

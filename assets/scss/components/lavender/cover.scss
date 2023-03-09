@@ -1,0 +1,14 @@
+@import "../../colors/baseui";
+@import "../../colors/lavender";
+@import "../../fonts/import";
+
+.cover-image {
+  padding: 10em 0 10em 0;
+}
+
+.cover-text-container {
+  padding: 10em 2em 10em 2em;
+}
+.light-cover-text {
+  color: $neutral95;
+}
