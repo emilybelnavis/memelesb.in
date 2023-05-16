@@ -10,7 +10,9 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@offset-dev/strapi-calendar": "^0.0.10",
     "@strapi/plugin-i18n": "4.6.0",
+    "@strapi/plugin-open-ai": "^1.0.1",
     "@strapi/plugin-users-permissions": "4.6.0",
     "@strapi/strapi": "4.6.0",
     "better-sqlite3": "7.4.6",
