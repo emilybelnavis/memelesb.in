@@ -17,7 +17,7 @@ const Footer = ({global}) => {
         //         </div>
         //     </div>
         // </footer>
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 fixed-bottom">
+        <footer className="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 bg-light fixed-bottom">
             <div className="container border-top">
                 <div className="col-md-4 d-flex pt-4 align-items-center">
                     <div className="row">

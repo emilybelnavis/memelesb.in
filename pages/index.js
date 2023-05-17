@@ -20,9 +20,9 @@ export default function Home( {posts, categories, global, homepage, about }) {
     return (
         <Layout categories={categories} global={global} homepage={homepage} about={about}>
             <div className="mb-4 rounded-3">
-                <div className="container-fluid py-5 px-5" style={coverImage}>
-                    <h1 className="display-1 fw-bold on-dark-background-cover">{homepage.attributes.site_tagline}</h1>
-                    <p className="col-md-8 fs-4 on-dark-background-cover">{about.attributes.about_home}</p>
+                <div className="container-fluid py-5 px-3" style={coverImage}>
+                    <h1 className="display-1 fw-bold on-dark-background-cover pt-5 mt-5">{global.attributes.site_tagline}</h1>
+                    <p className="col-md-6 fs-4 on-dark-background-cover pb-5 mb-5">{about.attributes.about_home}</p>
                 </div>
             </div>
         </Layout>

@@ -71,6 +71,16 @@ body {
   min-height: 50vh !important;
 }
 
+.min-h-75 {
+  min-height: 75% !important;
+}
+
+.home-bg {
+  top: 4vw;
+  left: 4vw;
+  width: 4vw;
+  height: 4vw;
+}
 .page-header {
   padding: 0;
   position: relative;
@@ -104,4 +114,8 @@ body {
 
 .on-dark-background-cover {
   color: $neutral99 !important;
+}
+
+.about-text {
+  font-size: 12pt !important;
 }
