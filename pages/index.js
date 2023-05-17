@@ -12,8 +12,9 @@ export default function Home( {posts, categories, global, homepage, about }) {
     const coverImage = {
         background: ` linear-gradient(rgba(0,0,0, 0.25), rgba(0, 0, 0, 0.45)),
                      url("${getStrapiMedia(homepage.attributes.media)}")`,
-        backgroundSize: "auto 100%",
-        backgroundPosition: "cover"
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
     }
 
     return (
