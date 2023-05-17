@@ -1,11 +1,14 @@
-@import "../../colors/baseui";
+//@import "../../colors/baseui";
 @import "../../colors/lavender";
 @import "../../fonts/import";
 
-$navbar-gap: 0px !default;
+// $navbar-gap: 0px !default;
 
 .ml-bg-primary-container-light {
   background: $lightPrimaryContainer;
+}
+.ml-bg-primary-container-light.blur {
+  background: rgba($lightPrimaryContainer, 0.5)
 }
 
 .ml-nav-brand-on-primary-container-light {
@@ -17,4 +20,18 @@ $navbar-gap: 0px !default;
 .ml-nav-link-on-primary-container-light {
   font-family: "New York Extra Large" !important;
   color: $lightOnPrimaryContainer !important;
+}
+
+.nav-link {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-size: 1.625rem;
+}
+
+.ml-nav-light-bg {
+  background: $lightBackground !important;
 }

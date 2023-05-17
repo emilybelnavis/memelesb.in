@@ -1,3 +1,5 @@
+@import "../../colors/lavender";
+
 $container-max-width:                    1200px !default;
 $container-xsmall-max-width:             750px !default;
 $container-small-max-width:              900px !default;
@@ -22,9 +24,20 @@ $container-padding-horizontal-m:         40px !default;
   background-color: transparent;
 }
 
+
 // Container Widths
 .ml-container-xsmall { max-width: $container-xsmall-max-width; }
 .ml-container-small { max-width: $container-small-max-width; }
 .ml-container-large { max-width: $container-large-max-width; }
 .ml-container-xlarge { max-width: $container-xlarge-max-width; }
 .ml-container-expand { max-width: none; }
+
+.container-light {
+  background-color: $lightBackground !important;
+  color: $lightOnBackground !important;
+}
+
+.container-dark {
+  background-color: $darkBackground !important;
+  color: $darkOnBackground !important;
+}

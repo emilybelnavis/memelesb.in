@@ -12,3 +12,7 @@
 .light-cover-text {
   color: $neutral95;
 }
+
+.bg-gradient-primary {
+  background-image: linear-gradient(195deg, $primary90, $primary80);
+}

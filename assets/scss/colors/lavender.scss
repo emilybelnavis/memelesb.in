@@ -40,6 +40,19 @@ $tertiary20: #381B26 !default;
 $tertiary10: #240D16 !default;
 $tertiary0: #000000 !default;
 
+$neutral100: #FFFFFF !default;
+$neutral99: #FFF9FE !default;
+$neutral95: #F2EAF2 !default;
+$neutral90: #E1D9DF !default;
+$neutral80: #BEB8BF !default;
+$neutral70: #9F999F !default;
+$neutral60: #817D82 !default;
+$neutral50: #656166 !default;
+$neutral40: #4E4A50 !default;
+$neutral30: #383639 !default;
+$neutral20: #252427 !default;
+$neutral10: #161518 !default;
+$neutral0: #000000 !default;
 
 $lightPrimary: $primary40 !default;
 $lightOnPrimary: $primary100 !default;
@@ -55,4 +68,31 @@ $lightTertiary: $tertiary40 !default;
 $lightOnTertiary: $tertiary100 !default;
 $lightTertiaryContainer: $tertiary90 !default;
 $lightOnTertiaryContainer: $tertiary10 !default;
+
+$lightBackground: $neutral99 !default;
+$lightOnBackground: $neutral10 !default;
+$lightSurface: $neutral99 !default;
+$lightOnSurface: $neutral10 !default;
+
+$darkPrimary: $primary80 !default;
+$darkOnPrimary: $primary20 !default;
+$darkPrimaryContainer: $primary30 !default;
+$darkOnPrimaryContainer: $primary90 !default;
+
+$darkSecondary: $secondary80 !default;
+$darkOnSecondary: $secondary20 !default;
+$darkSecondaryContainer: $secondary30 !default;
+$darkOnSecondaryContainer: $secondary90 !default;
+
+$darkTertiary: $tertiary80 !default;
+$darkOnTertiary: $tertiary20 !default;
+$darkTertiaryContainer: $tertiary30 !default;
+$darkOnTertiaryContainer: $tertiary90 !default;
+
+$darkBackground: $neutral10 !default;
+$darkOnBackground: $neutral90 !default;
+$darkSurface: $neutral10 !default;
+$darkOnSurface: $neutral90 !default;
+
+
 

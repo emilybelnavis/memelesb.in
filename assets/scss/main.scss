@@ -62,3 +62,46 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
   position: absolute;
 }
+
+.min-vh-75 {
+  min-height: 75vh !important;
+}
+
+.min-vh-50 {
+  min-height: 50vh !important;
+}
+
+.page-header {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.mask {
+  position: absolute;
+  background-position: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-cover, mask {
+  background-size: cover;
+}
+
+.z-index-sticky {
+  z-index: 1020;
+}
+
+.on-dark-background {
+  color: $darkOnBackground !important;
+}
+
+.on-dark-background-cover {
+  color: $neutral99 !important;
+}
