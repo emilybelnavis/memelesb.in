@@ -74,10 +74,17 @@
       "target": "api::category.category",
       "inversedBy": "posts"
     },
-    "users_permissions_user": {
+    "sub_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-category.sub-category",
+      "mappedBy": "post"
+    },
+    "author": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "api::author.author",
+      "inversedBy": "post"
     }
   }
 }
