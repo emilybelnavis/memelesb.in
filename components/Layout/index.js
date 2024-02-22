@@ -16,7 +16,7 @@ const Layout = ({ children, categories, global, seo}) => (
             <header className="blog-header pb-5 mb-5">
                 <Nav categories={categories} global={global} />
             </header>
-            <main className="container">
+            <main className="container pb-5 mb-5">
                 { children }
             </main>
             <Footer global={global}/>

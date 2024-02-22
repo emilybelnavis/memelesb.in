@@ -11,7 +11,9 @@ const Category = ({ category, categories, global }) => {
                     <h1 className="display-1 fw-bold">{category.attributes.name}</h1>
                 </div>
             </div>
-            <Post posts={category.attributes.posts.data} />
+            <div className="container">
+                <Post posts={category.attributes.posts.data} />
+            </div>
         </Layout>
     );
 }

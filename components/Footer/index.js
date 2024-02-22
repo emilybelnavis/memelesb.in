@@ -17,12 +17,11 @@ const Footer = ({global}) => {
         //         </div>
         //     </div>
         // </footer>
-        <footer className="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 bg-light fixed-bottom">
+        <footer className="d-flex flex-wrap justify-content-between align-items-center pt-3 bg-light fixed-bottom">
             <div className="container border-top">
-                <div className="col-md-4 d-flex pt-4 align-items-center">
-                    <div className="row">
-                        <span className="mb-3 me-2 mb-md-0">© 2023 emily belnavis, all rights reserved</span>
-                    </div>
+                <div className="col ">
+                    <p className="pt-5 pb-0 mb-0">© 2023-2024 emily belnavis, all rights reserved</p>
+                    <p className="pt-0 mt-0">made in toronto with <i className="bi bi-heart-fill" id="heart"></i></p>
                 </div>
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                     {instagramLink ? (

@@ -3,10 +3,6 @@
 
 $global-link-color: #DA7D02;
 
-@import "uikit/src/scss/variables";
-@import "uikit/src/scss/mixins-theme";
-
-@import "uikit/src/scss/uikit-theme";
 
 $fontFamily: "New York Extra Large";
 a {
@@ -118,4 +114,41 @@ body {
 
 .about-text {
   font-size: 12pt !important;
+}
+
+
+@mixin animate($animation, $duration, $method, $times,) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+#heart {
+  position: absolute;
+  margin: 0 5px 0 5px;
+  color: salmon;
+  text-align: center;
+
+  @include keyframes(heartbeat) {
+    0% { transform: scale( .75 ); }
+    20% { transform: scale( 1 ); }
+    40% { transform: scale( .75 ); }
+    60% { transform: scale( 1 ); }
+    80% { transform: scale( .75 ); }
+    100% { transform: scale( .75 ); }
+  }
+  @include animate(heartbeat, 1s, linear, infinite)
+}
+
+.author-image {
+  position: absolute;
+  display: inline-block;
+  margin: 5px;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
 }

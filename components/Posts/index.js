@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Card from "@/components/Card";
-
+import CardFeatured from "@/components/Card/featuredpost";
+import CardStandard from "@/components/Card/standard";
 
 const Posts = ({ posts }) => {
     const featuredPostsCount = Math.ceil(posts.length / 5);
@@ -10,20 +10,20 @@ const Posts = ({ posts }) => {
 
     return (
         <div>
-            {featuredPosts.map((post, i) => {
-                return (
-                    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-                        <div class="col-md-6 px-0">
-                            <h1 class="display-4 fst-italic on-dark-background">{post.attributes.title}</h1>
-                            <p class="lead my-3">{post.attributes.description}</p>
-                            {/*<p class="lead mb-0"><a href={} class="text-white fw-bold">Continue reading...</a></p>*/}
-                            <Link href={`/post/${post.attributes.slug}`}>
-                                <p class="lead mb-0">Continue reading...</p>
-                            </Link>
-                        </div>
-                    </div>
-                )
-            })}
+            <div className="container">
+                {featuredPosts.map((post, i) => {
+                    return (
+                        <CardFeatured post={post} key={`post__left__${post.attributes.slug}`} />
+                    )
+                })}
+            </div>
+            <div className="container">
+                {unfeaturedPosts.map((post, i) => {
+                    return(
+                        <CardStandard post={post} key={`post__left__${post.attributes.slug}`} />
+                    )
+                })}
+            </div>
         </div>
     )
 }
