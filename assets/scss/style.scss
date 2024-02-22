@@ -1,0 +1,37 @@
+@import "fonts/_import";
+@import "main";
+
+
+#category {
+    font-family: "New York Extra Large";
+    font-weight: 500;
+}
+
+#title {
+    letter-spacing: 0.4px;
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 1.13636;
+}
+
+#banner {
+    margin: 20px;
+    height: 800px;
+}
+
+#editor {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+img:hover {
+    opacity: 1;
+    transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.link-home {
+    font-family: "New York", serif !important;
+    font-style: normal;
+    font-weight: 200;
+}

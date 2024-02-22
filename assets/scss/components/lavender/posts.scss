@@ -1,0 +1,39 @@
+@import "../../colors/lavender";
+
+.post-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: auto;
+}
+
+.post-info-left {
+  display: flex;
+}
+
+.post-date, .post-read-time {
+  color: rgba($lightOnPrimaryContainer, 0.44);
+  font-size: 1rem;
+}
+
+.author-avatar {
+  display: block;
+  padding-right: 1rem;
+}
+
+.avatar-image {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+
+.author-name {
+  color: $lightPrimary;
+  font-size: 1rem;
+}
+
+.post-title, .post-description {
+  color: $lightPrimary;
+}

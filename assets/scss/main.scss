@@ -1,0 +1,154 @@
+@import "fonts/_import";
+@import "components/lavender/_import";
+
+$global-link-color: #DA7D02;
+
+
+$fontFamily: "New York Extra Large";
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $fontFamily;
+  font-size: 6em;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: $fontFamily;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+h3{
+  font-family: $fontFamily;
+  font-size: 3em;
+  font-weight: 500
+}
+
+h4 {
+  font-family: $fontFamily;
+  font-size: 2em;
+  font-weight: 500
+}
+
+h5 {
+  font-family: $fontFamily;
+  font-size: 1.5em;
+  font-weight: 500
+}
+
+h6 {
+  font-family: $fontFamily;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: 1em;
+  font-weight: 400;
+}
+.cover-text {
+  color: white !important;
+}
+
+.cover-dark {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  position: absolute;
+}
+
+.min-vh-75 {
+  min-height: 75vh !important;
+}
+
+.min-vh-50 {
+  min-height: 50vh !important;
+}
+
+.min-h-75 {
+  min-height: 75% !important;
+}
+
+.home-bg {
+  top: 4vw;
+  left: 4vw;
+  width: 4vw;
+  height: 4vw;
+}
+.page-header {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.mask {
+  position: absolute;
+  background-position: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-cover, mask {
+  background-size: cover;
+}
+
+.z-index-sticky {
+  z-index: 1020;
+}
+
+.on-dark-background {
+  color: $darkOnBackground !important;
+}
+
+.on-dark-background-cover {
+  color: $neutral99 !important;
+}
+
+.about-text {
+  font-size: 12pt !important;
+}
+
+
+@mixin animate($animation, $duration, $method, $times,) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+#heart {
+  position: absolute;
+  margin: 0 5px 0 5px;
+  color: salmon;
+  text-align: center;
+
+  @include keyframes(heartbeat) {
+    0% { transform: scale( .75 ); }
+    20% { transform: scale( 1 ); }
+    40% { transform: scale( .75 ); }
+    60% { transform: scale( 1 ); }
+    80% { transform: scale( .75 ); }
+    100% { transform: scale( .75 ); }
+  }
+  @include animate(heartbeat, 1s, linear, infinite)
+}
+
+.author-image {
+  position: absolute;
+  display: inline-block;
+  margin: 5px;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
